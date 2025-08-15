@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Laptop & Phụ kiện (LAPZ)</title>
+    <!-- Liên kết với file CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tải thư viện Font Awesome để dùng icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Liên kết với Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Thanh thông báo khuyến mãi trên cùng -->
+    <div class="top-promo-bar">
+        <div class="container flex justify-between items-center h-full">
+            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="shop-now-btn">Shop Now</a>
+                <div class="language-selector">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down text-sm ml-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container flex items-center justify-between py-4">
+            <div class="header-left flex items-center">
+                <h1 class="logo-text">LAPZ</h1>
+                <nav class="main-nav ml-8">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right flex items-center gap-6">
+                <div class="search-box flex items-center">
+                    <input type="text" placeholder="What are you looking for?" class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <a href="#" class="header-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content-area">
+        <div class="container flex">
+            <!-- Sidebar bên trái -->
+            <aside class="sidebar">
+                <ul class="category-list">
+                    <li>
+                        <a href="#">Laptop</a>
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Phụ kiện</a>
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                    <!-- Thêm các danh mục khác nếu cần -->
+                    <li><a href="#">Màn hình</a> <i class="fas fa-chevron-right"></i></li>
+                    <li><a href="#">Bàn phím &amp; Chuột</a> <i class="fas fa-chevron-right"></i></li>
+                    <li><a href="#">Tai nghe &amp; Loa</a> <i class="fas fa-chevron-right"></i></li>
+                    <li><a href="#">Linh kiện PC</a> <i class="fas fa-chevron-right"></i></li>
+                    <li><a href="#">Thiết bị mạng</a> <i class="fas fa-chevron-right"></i></li>
+                </ul>
+            </aside>
+
+            <!-- Nội dung chính (Banner & Sản phẩm) -->
+            <div class="content-wrapper">
+                <!-- Banner chính -->
+                <section class="hero-banner">
+                    <!-- Đã thay đổi đường dẫn ảnh theo yêu cầu -->
+                    <img src="assets/img/anh1.png" alt="Banner Laptop" class="banner-image">
+                    <div class="banner-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </section>
+
+                <!-- Ưu đãi hôm nay -->
+                <section class="today-deals">
+                    <div class="section-title-line">
+                        <div class="section-header-left">
+                            <span class="red-box"></span>
+                            <h3>Today's</h3>
+                        </div>
+                        <div class="deal-navigation">
+                            <button class="nav-arrow prev-deal"><i class="fas fa-chevron-left"></i></button>
+                            <button class="nav-arrow next-deal"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <h2>Flash Sales</h2>
+                    <div class="countdown">
+                        <!-- Placeholder for countdown timer -->
+                        <div class="countdown-item"><span>00</span><small>Days</small></div>
+                        <div class="countdown-item"><span>00</span><small>Hours</small></div>
+                        <div class="countdown-item"><span>00</span><small>Minutes</small></div>
+                        <div class="countdown-item"><span>00</span><small>Seconds</small></div>
+                    </div>
+                    <div class="flash-sales-products">
+                        <div id="flash-product-list" class="flash-product-carousel-container">
+                            <!-- Đây là wrapper mới để chứa các product card và thực hiện slide -->
+                            <div id="flash-products-inner-wrapper" class="flash-products-inner-wrapper">
+                                <!-- Sản phẩm Flash Sales sẽ được tải từ JavaScript tại đây -->
+                                <p>Đang tải sản phẩm Flash Sales...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nút View All Products đặt ngay sau flash-sales-products -->
+                    <button class="view-all-products-btn">View All Products</button>
+                </section>
+
+                <!-- Đường phân cách ngang -->
+                <div class="horizontal-divider"></div>
+
+                <!-- Phần Thương hiệu -->
+                <section class="brands-section">
+                    <div class="section-title-line">
+                        <div class="section-header-left">
+                            <span class="red-box"></span>
+                            <h3>Laptop</h3>
+                        </div>
+                        <div class="brand-navigation">
+                            <button class="nav-arrow prev-brand"><i class="fas fa-chevron-left"></i></button>
+                            <button class="nav-arrow next-brand"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <h2>Thương hiệu</h2>
+                    <div id="brand-list" class="brand-carousel-container">
+                        <!-- Thêm wrapper bên trong cho carousel -->
+                        <div id="brand-inner-wrapper" class="brand-inner-wrapper">
+                            <!-- Các thương hiệu sẽ được tải từ JavaScript tại đây -->
+                            <!-- Dữ liệu placeholder đã được di chuyển vào JS -->
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Phần các danh mục nhỏ (CPU, Ram, etc.) -->
+                <section class="small-categories-section">
+                    <div id="small-category-list" class="small-category-grid">
+                        <!-- Các danh mục nhỏ sẽ được tải từ JavaScript tại đây -->
+                        <div class="small-category-card">
+                            <img src="https://placehold.co/80x80/E0E0E0/333333?text=CPU" alt="CPU Icon">
+                            <span>CPU</span>
+                        </div>
+                        <div class="small-category-card">
+                            <img src="https://placehold.co/80x80/E0E0E0/333333?text=RAM" alt="RAM Icon">
+                            <span>Ram</span>
+                        </div>
+                        <div class="small-category-card">
+                            <img src="https://placehold.co/80x80/E0E0E0/333333?text=HDD" alt="HDD Icon">
+                            <span>Ổ cứng</span>
+                        </div>
+                        <div class="small-category-card">
+                            <img src="https://placehold.co/80x80/E0E0E0/333333?text=Keyboard" alt="Keyboard Icon">
+                            <span>Bàn phím</span>
+                        </div>
+                        <div class="small-category-card">
+                            <img src="https://placehold.co/80x80/E0E0E0/333333?text=Mouse" alt="Mouse Icon">
+                            <span>Chuột máy tính</span>
+                        </div>
+                        <div class="small-category-card">
+                            <img src="https://placehold.co/80x80/E0E0E0/333333?text=Headphone" alt="Headphone Icon">
+                            <span>Tai nghe</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Phần Loại sản phẩm (Phụ kiện) -->
+                <section class="product-type-section">
+                    <div class="section-title-line">
+                        <div class="section-header-left">
+                            <span class="red-box"></span>
+                            <h3>Linh kiện - Phụ kiện</h3>
+                        </div>
+                        <div class="type-navigation">
+                            <button class="nav-arrow prev-type"><i class="fas fa-chevron-left"></i></button>
+                            <button class="nav-arrow next-type"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <h2>Loại sản phẩm</h2>
+                    <div id="product-type-list" class="product-type-carousel-container">
+                        <!-- Thêm wrapper bên trong cho carousel -->
+                        <div id="product-type-inner-wrapper" class="product-type-inner-wrapper">
+                            <!-- Các loại sản phẩm sẽ được tải từ JavaScript tại đây -->
+                            <!-- Dữ liệu placeholder đã được di chuyển vào JS -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Banner trước phần Laptop Gaming -->
+                <div class="promo-banner-gaming">
+                    <img src="assets/img/gaming.png" alt="Gaming Laptop Banner">
+                </div>
+
+                <!-- Phần Laptop Gaming -->
+                <section class="gaming-laptops-section">
+                    <div class="section-title-line">
+                        <div class="section-header-left">
+                            <span class="red-box"></span>
+                            <h3>Laptop</h3>
+                        </div>
+                        <div class="gaming-navigation">
+                            <button class="nav-arrow prev-gaming"><i class="fas fa-chevron-left"></i></button>
+                            <button class="nav-arrow next-gaming"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <h2>Gaming</h2>
+                    <div id="gaming-product-list" class="product-grid">
+                        <!-- Sản phẩm Laptop Gaming sẽ được tải từ JavaScript tại đây -->
+                        <p>Đang tải sản phẩm Gaming...</p>
+                    </div>
+                </section>
+                
+                <!-- Phần hiển thị sản phẩm khác -->
+                <section class="our-products">
+                    <div class="section-title-line">
+                        <div class="section-header-left">
+                            <span class="red-box"></span>
+                            <h3>Sản phẩm của chúng tôi</h3>
+                        </div>
+                        <button class="view-all-products-btn">Xem tất cả sản phẩm</button>
+                    </div>
+                    <h2>Khám phá các sản phẩm</h2>
+                    <div id="product-list" class="product-grid">
+                        <!-- Sản phẩm sẽ được tải từ JavaScript tại đây -->
+                        <p>Đang tải sản phẩm...</p>
+                    </div>
+                </section>
+
+                <!-- Phần Laptop Học tập - Văn phòng -->
+                <section class="study-office-laptops-section">
+                    <div class="section-title-line">
+                        <div class="section-header-left">
+                            <span class="red-box"></span>
+                            <h3>Laptop</h3>
+                        </div>
+                        <div class="study-office-navigation">
+                            <button class="nav-arrow prev-study-office"><i class="fas fa-chevron-left"></i></button>
+                            <button class="nav-arrow next-study-office"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <h2>Học tập - Văn phòng</h2>
+                    <div id="study-office-product-list" class="product-grid">
+                        <!-- Sản phẩm Laptop Học tập - Văn phòng sẽ được tải từ JavaScript tại đây -->
+                        <p>Đang tải sản phẩm Học tập - Văn phòng...</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- New: Service Features Section -->
+    <section class="service-features-section">
+        <div class="container">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-truck-fast"></i>
+                </div>
+                <h3>Giao hàng nhanh và miễn phí</h3>
+                <p>Chúng tôi cung cấp dịch vụ giao hàng nhanh chóng và hoàn toàn miễn phí cho tất cả các đơn hàng.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Dịch vụ khách hàng 24/7</h3>
+                <p>Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng 24/7 để giải đáp mọi thắc mắc của bạn.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-money-bill-transfer"></i>
+                </div>
+                <h3>Đảm bảo hoàn tiền</h3>
+                <p>Nếu bạn không hài lòng, chúng tôi cam kết hoàn tiền 100% trong thời gian quy định.</p>
+            </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </section>
+
+    <!-- New: Extended Footer -->
+    <footer class="extended-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col subscribe-col">
+                    <h3>LAPZ</h3>
+                    <h4>Subscribe</h4>
+                    <p>Nhận các cập nhật qua email về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                    <div class="subscribe-input">
+                        <input type="email" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li>02 Võ Oanh, Thanh Lộc, Mỹ Tây, TPHCM</li>
+                        <li><a href="mailto:demo@gmail.com">demo@gmail.com</a></li>
+                        <li>0123456789</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Tài khoản</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tài khoản của tôi</a></li>
+                        <li><a href="#">Đăng nhập / Đăng ký</a></li>
+                        <li><a href="#">Giỏ hàng</a></li>
+                        <li><a href="#">Danh sách yêu thích</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col download-app-col">
+                    <h3>Tải ứng dụng</h3>
+                    <div class="app-stores">
+                        <a href="#"><img src="https://placehold.co/120x40/000000/FFFFFF?text=Google+Play" alt="Google Play"></a>
+                        <a href="#"><img src="https://placehold.co/120x40/000000/FFFFFF?text=App+Store" alt="App Store"></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Cửa hàng Laptop & Phụ kiện LAPZ. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Old Footer - Remove or comment out after new footer is functional -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cửa hàng Laptop & Phụ kiện LAPZ. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer> -->
+
+    <!-- Liên kết với file JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
