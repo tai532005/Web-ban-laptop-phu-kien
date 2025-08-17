@@ -1,0 +1,341 @@
+/* assets/css/auth_style.css */
+
+/* Specific styles for the Authentication pages (Sign Up and Log In) */
+.auth-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 180px); /* Adjust height to fit header/footer */
+    padding: 20px;
+    background-color: #f8f8f8; /* Same background as main content area */
+}
+
+.auth-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px; /* Adjusted max width for the whole auth block based on Figma */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* Ensure content doesn't spill out of this container */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-height: 550px; /* Minimum height for the container */
+}
+
+.auth-image {
+    flex: 1.2; /* Chiếm nhiều không gian hơn cho ảnh */
+    background-color: #fce4ec; /* Màu nền nhẹ nhàng, tương tự ảnh Figma */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; /* Cắt bớt nội dung bị tràn ra khỏi khung hình ảnh */
+    min-width: 300px; /* Đảm bảo ảnh không quá nhỏ trên màn hình vừa */
+}
+
+.auth-image .responsive-auth-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Đảm bảo hình ảnh được căn chỉnh tốt trong khung */
+    border-radius: 8px; /* Bo góc nhẹ cho hình ảnh bên trong */
+}
+
+.auth-form-wrapper {
+    flex: 1; /* Chiếm 1 phần không gian còn lại cho form */
+    padding: 40px; /* Tăng padding để form có khoảng trống đẹp */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff; /* Nền trắng cho form */
+}
+
+.auth-title {
+    font-size: 2.2em; /* Kích thước tiêu đề lớn hơn */
+    color: #333;
+    margin-bottom: 30px; /* Tăng khoảng cách dưới tiêu đề */
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Khoảng cách giữa các nhóm form */
+    position: relative; /* Dùng để định vị icon mắt */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group .sr-only { /* Screen Reader Only - Ẩn nhãn trực quan */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px; /* Tăng padding input */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Bo góc nhiều hơn */
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #e74c3c; /* Đổi màu viền khi focus */
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2); /* Thêm bóng nhẹ */
+    outline: none;
+}
+
+.password-group .toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%; /* Điều chỉnh để icon nằm giữa */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px; /* Tăng padding nút */
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em; /* Kích thước chữ lớn hơn */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    text-decoration: none; /* Đảm bảo link không có gạch chân */
+}
+
+.btn-login {
+    background-color: #e74c3c; /* Màu đỏ chủ đạo */
+    color: #fff;
+    margin-top: 20px; /* Khoảng cách trên nút Đăng nhập */
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.2);
+}
+
+.btn-login:hover {
+    background-color: #c0392b; /* Màu đỏ đậm hơn khi hover */
+    transform: translateY(-2px); /* Hiệu ứng nhấn nhẹ */
+    box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+}
+
+.or-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0; /* Khoảng cách trên và dưới cho "Hoặc" */
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.or-separator::before,
+.or-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+
+.or-separator:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.or-separator:not(:empty)::after {
+    margin-left: .5em;
+}
+
+.btn-google-login {
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    display: flex; /* Dùng flexbox để căn icon và chữ */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Khoảng cách giữa icon và chữ */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn-google-login:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-google-login i {
+    font-size: 1.2em;
+    color: #e74c3c; /* Màu đỏ cho icon Google */
+}
+
+.forgot-password-link {
+    text-align: right; /* Căn phải liên kết */
+    margin-bottom: 25px; /* Khoảng cách dưới liên kết */
+}
+
+.forgot-password-link a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: text-decoration 0.3s ease;
+}
+
+.forgot-password-link a:hover {
+    text-decoration: underline;
+}
+
+.login-link,
+.signup-link {
+    text-align: center;
+    margin-top: 30px; /* Khoảng cách trên link đăng ký/đăng nhập */
+    font-size: 0.9em;
+    color: #555;
+}
+
+.login-link a,
+.signup-link a {
+    color: #e74c3c; /* Màu đỏ cho link đăng nhập/đăng ký */
+    text-decoration: none;
+    font-weight: 600;
+    transition: text-decoration 0.3s ease;
+}
+
+.login-link a:hover,
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive for auth pages */
+@media (max-width: 992px) {
+    .auth-container {
+        flex-direction: column; /* Xếp chồng ảnh và form */
+        max-width: 600px; /* Giới hạn chiều rộng trên màn hình nhỏ hơn */
+    }
+    .auth-image {
+        height: 300px; /* Chiều cao cố định cho tablet */
+        padding: 10px;
+        max-height: 250px; /* Giới hạn chiều cao trên tablet */
+        min-width: unset; /* Bỏ giới hạn min-width */
+    }
+    .auth-image .responsive-auth-image {
+        height: 100%; /* Chiều cao của ảnh sẽ lấp đầy auth-image */
+        width: auto; /* Chiều rộng tự động để giữ tỉ lệ */
+    }
+    .auth-form-wrapper {
+        padding: 30px 20px; /* Giảm padding trên màn hình nhỏ */
+    }
+    .auth-title {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-page-content {
+        padding: 10px;
+    }
+    .auth-container {
+        border-radius: 0; /* Bỏ bo góc trên màn hình rất nhỏ */
+        box-shadow: none; /* Bỏ bóng trên màn hình rất nhỏ */
+        min-height: unset; /* Bỏ min-height trên màn hình rất nhỏ */
+    }
+    .auth-form-wrapper {
+        padding: 20px 15px; /* Giảm padding nhiều hơn */
+    }
+    .auth-image {
+        display: none; /* Ẩn hẳn ảnh trên điện thoại nhỏ để tiết kiệm không gian */
+    }
+    .auth-title {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .btn {
+        padding: 12px;
+        font-size: 1em;
+    }
+    .or-separator {
+        margin: 20px 0;
+    }
+    .signup-link {
+        margin-top: 20px;
+    }
+}
+
+
+/* Custom Modal Styles (for alert replacement) */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more specific like max-width */
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.custom-modal-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.modal-close-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+    background-color: #c0392b;
+}
+
