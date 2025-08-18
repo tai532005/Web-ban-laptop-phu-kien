@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách yêu thích - LAPZ</title>
+    <!-- Liên kết với CSS chung -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tải thư viện Font Awesome để dùng icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Liên kết với Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Thanh thông báo khuyến mãi trên cùng -->
+    <div class="top-promo-bar">
+        <div class="container flex justify-center items-center h-full">
+            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+            <div class="flex items-center gap-4 ml-auto">
+                <a href="#" class="shop-now-btn">Shop Now</a>
+                <div class="language-selector">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down text-sm ml-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container flex justify-between items-center py-4">
+            <div class="header-left flex items-center gap-6">
+                <div class="logo">
+                    <a href="index.html">LAPZ</a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list flex gap-4">
+                        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+                        <li><a href="#" class="nav-link">Sản phẩm</a></li>
+                        <li><a href="#" class="nav-link">Liên hệ</a></li>
+                        <li><a href="#" class="nav-link">Về chúng tôi</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right flex items-center gap-4">
+                <div class="search-box-wrapper">
+                    <input type="text" placeholder="Bạn tìm gì hôm nay?" class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <a href="wishlist.html"><i class="fas fa-heart text-xl"></i></a> <!-- Active wishlist icon -->
+                <a href="#"><i class="fas fa-shopping-cart text-xl"></i></a>
+                <a href="login.html" class="login-btn">Đăng nhập</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content for Wishlist Page -->
+    <main class="main-content-area wishlist-page">
+        <div class="container">
+            <!-- Wishlist Header -->
+            <div class="wishlist-header">
+                <h2>Wishlist (8)</h2> <!-- Updated count for demonstration -->
+                <button class="btn btn-primary move-all-to-bag-btn">Move All To Bag</button>
+            </div>
+
+            <!-- Wishlist Products Grid -->
+            <div class="wishlist-products-grid product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="discount-badge">-2%</span>
+                        <img src="https://placehold.co/250x250/FFEBEE/E74C3C?text=Laptop+Vivobook" alt="Laptop Asus Vivobook Go 15">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i> <!-- Delete icon -->
+                            <i class="fas fa-eye product-action-icon"></i> <!-- Quick view icon -->
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Asus Vivobook Go 15</h3>
+                        <div class="price">
+                            <span class="new-price">15.490.000₫</span>
+                            <span class="old-price">20.490.000₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://placehold.co/250x250/E0F7FA/3498DB?text=Laptop+Gaming" alt="Laptop Asus Gaming V16">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i>
+                            <i class="fas fa-eye product-action-icon"></i>
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Asus Gaming V16</h3>
+                        <div class="price">
+                            <span class="new-price">23.990.000₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://placehold.co/250x250/E8F5E9/27AE60?text=HP+Probook" alt="Laptop HP Probook 440">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i>
+                            <i class="fas fa-eye product-action-icon"></i>
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop HP Probook 440</h3>
+                        <div class="price">
+                            <span class="new-price">26.990.000₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://placehold.co/250x250/FFF3E0/F39C12?text=ROG+Flow" alt="Laptop Asus ROG Flow Z13">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i>
+                            <i class="fas fa-eye product-action-icon"></i>
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Asus ROG Flow Z13</h3>
+                        <div class="price">
+                            <span class="new-price">79.990.000₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 (Added for 2-row demo) -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="discount-badge">-10%</span>
+                        <img src="https://placehold.co/250x250/E0FFFF/00BCD4?text=Acer+Swift" alt="Laptop Acer Swift 3">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i>
+                            <i class="fas fa-eye product-action-icon"></i>
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Acer Swift 3</h3>
+                        <div class="price">
+                            <span class="new-price">18.000.000₫</span>
+                            <span class="old-price">20.000.000₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 (Added for 2-row demo) -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://placehold.co/250x250/F5F5F5/757575?text=Dell+XPS" alt="Laptop Dell XPS 15">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i>
+                            <i class="fas fa-eye product-action-icon"></i>
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Dell XPS 15</h3>
+                        <div class="price">
+                            <span class="new-price">45.000.000₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 (Added for 2-row demo) -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <span class="discount-badge">-5%</span>
+                        <img src="https://placehold.co/250x250/E6F7FF/2196F3?text=Macbook+Air" alt="Macbook Air M2">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i>
+                            <i class="fas fa-eye product-action-icon"></i>
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Macbook Air M2</h3>
+                        <div class="price">
+                            <span class="new-price">28.500.000₫</span>
+                            <span class="old-price">30.000.000₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 (Added for 2-row demo) -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://placehold.co/250x250/FFF3E0/FFC107?text=Lenovo+Thinkpad" alt="Laptop Lenovo Thinkpad T14">
+                        <div class="icon-overlay">
+                            <i class="fas fa-trash-alt product-action-icon"></i>
+                            <i class="fas fa-eye product-action-icon"></i>
+                        </div>
+                        <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Lenovo Thinkpad T14</h3>
+                        <div class="price">
+                            <span class="new-price">22.000.000₫</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal Divider (Example) -->
+            <div class="horizontal-divider"></div>
+
+            <!-- Just For You Section -->
+            <section class="just-for-you-section today-deals"> <!-- Reusing today-deals class for styling -->
+                <div class="section-title-line">
+                    <div class="section-header-left">
+                        <div class="red-box"></div>
+                        <h3>Just For You</h3>
+                    </div>
+                    <button class="btn btn-secondary see-all-btn">See All</button>
+                </div>
+                <h2>Có thể bạn thích</h2> <!-- Changed H2 title -->
+                <div class="product-grid" id="just-for-you-product-list">
+                    <!-- Just For You Product Card 1 -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="discount-badge">-50%</span>
+                            <img src="https://placehold.co/250x250/F3E5F5/9B59B6?text=Mouse+Rog" alt="Mouse - Asus ROG Gladius 2">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mouse - Asus ROG Gladius 2</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="review-count">(99)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">1.150.000₫</span>
+                                <span class="old-price">2.290.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Just For You Product Card 2 -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="https://placehold.co/250x250/FCE4EC/E91E63?text=Laptop+TUF+Gaming" alt="Laptop Asus TUF Gaming F15">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Laptop Asus TUF Gaming F15</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="review-count">(65)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">21.390.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Just For You Product Card 3 -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="discount-badge new-badge">NEW</span> <!-- New badge -->
+                            <img src="https://placehold.co/250x250/F5F5F5/757575?text=Lenovo+Yoga+Pro" alt="Laptop Lenovo Yoga Pro 7">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Laptop Lenovo Yoga Pro 7</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="review-count">(65)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">39.290.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Just For You Product Card 4 -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="discount-badge">-30%</span>
+                            <img src="https://placehold.co/250x250/E0FFFF/00BCD4?text=MSI+Creator" alt="Laptop MSI Creator Z17 HX">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Laptop MSI Creator Z17 HX</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="review-count">(99)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">49.990.000₫</span>
+                                <span class="old-price">81.990.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Just For You Product Card 5 (Added for 2-row demo) -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="discount-badge">-15%</span>
+                            <img src="https://placehold.co/250x250/FFEBEE/E74C3C?text=External+SSD" alt="Ổ cứng SSD di động">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Ổ cứng SSD di động</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span class="review-count">(45)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">1.500.000₫</span>
+                                <span class="old-price">1.750.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Just For You Product Card 6 (Added for 2-row demo) -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <img src="https://placehold.co/250x250/E0F7FA/3498DB?text=Gaming+Headset" alt="Tai nghe Gaming HyperX">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Tai nghe Gaming HyperX</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="review-count">(110)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">2.200.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Just For You Product Card 7 (Added for 2-row demo) -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="discount-badge new-badge">NEW</span>
+                            <img src="https://placehold.co/250x250/E8F5E9/27AE60?text=Webcam+Logitech" alt="Webcam Logitech C920">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Webcam Logitech C920</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="review-count">(80)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">1.800.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Just For You Product Card 8 (Added for 2-row demo) -->
+                    <div class="product-card">
+                        <div class="image-container">
+                            <span class="discount-badge">-10%</span>
+                            <img src="https://placehold.co/250x250/FFF3E0/F39C12?text=Gaming+Keyboard" alt="Bàn phím cơ Gaming">
+                            <div class="icon-overlay">
+                                <i class="fas fa-eye product-action-icon"></i>
+                            </div>
+                            <button class="add-to-cart-hover-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bàn phím cơ Gaming</h3>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="review-count">(150)</span>
+                            </div>
+                            <div class="price">
+                                <span class="new-price">2.500.000₫</span>
+                                <span class="old-price">2.800.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Service Features Section -->
+    <section class="service-features-section">
+        <div class="container">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                <h3>Giao hàng nhanh và miễn phí</h3>
+                <p>Chúng tôi cung cấp dịch vụ giao hàng nhanh chóng và hoàn toàn miễn phí cho tất cả các đơn hàng.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                <h3>Dịch vụ khách hàng 24/7</h3>
+                <p>Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng 24/7 để giải đáp mọi thắc mắc của bạn.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                <h3>Đảm bảo hoàn tiền</h3>
+                <p>Nếu bạn không hài lòng, chúng tôi cam kết hoàn tiền 100% trong thời gian quy định.</p>
+            </div>
+        </div>
+        <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col company-info-col">
+                    <h3>LAPZ</h3>
+                    <p class="subscribe-text">Subscribe</p>
+                    <p class="subscribe-description">Nhận các cập nhật qua email về của hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Nhập email của bạn" class="subscribe-input">
+                        <button class="subscribe-button"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+                <div class="footer-col support-col">
+                    <h3>Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li>02 Võ Oanh, Thanh Lộc, Mỹ Tây, TPHCM</li>
+                        <li><a href="mailto:lapz@gmail.com">lapz@gmail.com</a></li>
+                        <li>0123456789</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col account-col">
+                    <h3>Tài khoản</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tài khoản của tôi</a></li>
+                        <li><a href="login.html">Đăng nhập / Đăng ký</a></li>
+                        <li><a href="#">Giỏ hàng</a></li>
+                        <li><a href="#">Danh sách yêu thích</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col quick-link-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col download-app-col">
+                    <h3>Tải ứng dụng</h3>
+                    <div class="app-buttons-social">
+                        <div class="app-buttons">
+                            <a href="#"><img src="https://placehold.co/120x40/000000/FFFFFF?text=Google+Play" alt="Google Play"></a>
+                            <a href="#"><img src="https://placehold.co/120x40/000000/FFFFFF?text=App+Store" alt="App Store"></a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Cửa hàng Laptop & Phụ kiện LAPZ. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Liên kết với JavaScript chính (nếu có) -->
+    <script src="assets/js/script.js"></script>
+    <!-- Liên kết với JavaScript riêng của trang Wishlist -->
+    <script src="assets/js/wishlist_script.js"></script>
+    <!-- Custom Modal Structure -->
+    <div id="custom-modal" class="custom-modal">
+        <div class="custom-modal-content">
+            <span class="modal-close-btn">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+</body>
+</html>

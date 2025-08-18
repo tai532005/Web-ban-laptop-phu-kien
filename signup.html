@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản - LAPZ</title>
+    <!-- Liên kết với CSS chung -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Liên kết với CSS riêng cho trang đăng ký -->
+    <link rel="stylesheet" href="assets/css/signup_style.css">
+    <!-- Tải Font Awesome cho các icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tải font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Thanh thông báo khuyến mãi trên cùng -->
+    <div class="top-promo-bar">
+        <div class="container flex justify-center items-center h-full">
+            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="shop-now-btn">Shop Now</a>
+                <div class="language-selector">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down text-sm ml-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container flex items-center justify-between py-4">
+            <div class="header-left flex items-center">
+                <h1 class="logo-text">LAPZ</h1>
+                <nav class="main-nav ml-8">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right flex items-center gap-6">
+                <div class="search-box flex items-center">
+                    <input type="text" placeholder="What are you looking for?" class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <a href="#" class="header-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content-area signup-page-content">
+        <div class="container signup-container">
+            <div class="signup-image">
+                <!-- Hình ảnh laptop và túi mua sắm -->
+                <img src="assets/img/signuppic.png" alt="Laptop and Shopping Cart">
+            </div>
+            <div class="signup-form-card">
+                <h2>Create an account</h2>
+                <p>Enter your details below</p>
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email_phone" class="sr-only">Email or Phone Number</label>
+                        <input type="text" id="email_phone" name="email_phone" placeholder="Email or Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-create-account">Create Account</button>
+                    <button type="button" class="btn-google-signup">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png" alt="Google Logo">
+                        Sign up with Google
+                    </button>
+                </form>
+                <div class="login-link">
+                    Already have account? <a href="#">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extended Footer -->
+    <footer class="extended-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col subscribe-col">
+                    <h3>LAPZ</h3>
+                    <h4>Subscribe</h4>
+                    <p>Nhận các cập nhật qua email về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                    <div class="subscribe-input">
+                        <input type="email" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li>28 Võ Oanh, Nguyễn Gia Trí, Bình Thạnh, TPHCM</li>
+                        <li><a href="mailto:lapz@gmail.com">lapz@gmail.com</a></li>
+                        <li>0123456789</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Tài khoản</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tài khoản của tôi</a></li>
+                        <li><a href="#">Đăng nhập / Đăng ký</a></li>
+                        <li><a href="#">Giỏ hàng</a></li>
+                        <li><a href="#">Danh sách yêu thích</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col download-app-col">
+                    <h3>Tải ứng dụng</h3>
+                    <div class="app-stores">
+                        <a href="#"><img src="https://placehold.co/120x40/000000/FFFFFF?text=Google+Play" alt="Google Play"></a>
+                        <a href="#"><img src="https://placehold.co/120x40/000000/FFFFFF?text=App+Store" alt="App Store"></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Cửa hàng Laptop & Phụ kiện LAPZ. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Liên kết với JavaScript để xử lý form -->
+    <script src="assets/js/signup_script.js"></script>
+</body>
+</html>
